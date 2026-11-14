@@ -1,0 +1,23 @@
+/* ========= EXPERIENCE ========= */
+.experience {
+    &__content {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    &__titles {
+        display: grid;
+        row-gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        &:is(p, h3) {
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi-bold);
+        }
+    }
+
+    &__list {
+        list-style: initial;
+        padding-left: 2rem;
+    }
+}

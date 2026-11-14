@@ -1,0 +1,30 @@
+/* ========= TOOLS ========= */
+.tools {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 0.25rem;
+        cursor: default;
+        transition: transform 0.4s;
+        padding-bottom: 0.3rem;
+
+        &:hover {
+            transform: translateX(0.5rem);
+        }
+    }
+
+    &__img {
+        width: 1rem;
+    }
+
+    &__name {
+        font-size: var(--small-font-size);
+    }
+}

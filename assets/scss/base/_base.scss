@@ -1,0 +1,69 @@
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+input,
+button {
+font-family: var(--body-font);
+font-size: var(--normal-font-size);
+}
+
+body {
+background-color: var(--body-color);
+color: var(--title-color);
+}
+
+input,
+button {
+background: none;
+border: none;
+outline: none;
+}
+
+h1, h2, h3, h4 {
+color: var(--title-color);
+font-weight: var(--font-semi-bold);
+}
+
+ul {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+/* Show & hide sections */
+.main__area [data-content] {
+    display: none;
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.main-active[data-content] {
+    display: grid;
+}
+
+.main-active[data-content].show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Active button */
+.profile {
+    &__button.main-active {
+        background-color: var(--first-color);
+        transition: background-color 0.3s ease;
+    }
+}

@@ -1,0 +1,17 @@
+/* ========= EDUCACTION ========= */
+.education {
+    &__list {
+        display: grid;
+        row-gap: 1.5rem;
+    }
+
+    &__item {
+        display: grid;
+        row-gap: 0.25rem;
+
+        &:is(p, h3) {
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-semi-bold);
+        }
+    }
+}

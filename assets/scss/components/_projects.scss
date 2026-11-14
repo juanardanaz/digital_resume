@@ -1,0 +1,21 @@
+/* ========= PROJECTS ========= */
+.projects {
+    &__link {
+        display: block;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        &:hover .projects__img{
+            transform: scale(1.1);
+        }
+    }
+
+    &__img {
+        transition: transform 0.4s;
+    }
+
+    &__name {
+        font-size: var(--normal-font-size);
+        margin-bottom: 0.5rem;
+    }
+}
