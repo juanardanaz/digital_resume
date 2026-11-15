@@ -7,7 +7,7 @@
     &__image {
         width: 240px;
         height: 340px;
-        border: 1px dashed var(--black-color);
+        border: 1px solid var(--black-color);
         transform: rotate(5deg);
         margin: 0 auto 2rem;
         display: grid;

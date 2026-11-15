@@ -24,7 +24,7 @@
         }
 
         &__left {
-            border-right: 1px dashed var(--black-color);
+            border-right: 1px solid var(--black-color);
         }
     }
 
@@ -97,7 +97,7 @@
 
     .footer {
         &__container {
-            justify-content: space-between;
+            justify-content: space-evenly;
             padding-block: 3rem;
         }
     }

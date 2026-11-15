@@ -93,8 +93,8 @@ img {
   --header-heigth: 3rem;
   /* ========= Colors ========= */
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(90, 82%, 68%);
-  --first-color-alt: hsl(90, 78%, 64%);
+  --first-color: #a2d2ff;
+  --first-color-alt: #bde0fe;
   --title-color: hsl(0, 0%, 4%);
   --black-color: hsl(227, 25%, 11%);
   --body-color: hsl(260, 9%, 94%);
@@ -165,7 +165,7 @@ img {
 .profile__image {
   width: 240px;
   height: 340px;
-  border: 1px dashed var(--black-color);
+  border: 1px solid var(--black-color);
   transform: rotate(5deg);
   margin: 0 auto 2rem;
   display: grid;
@@ -257,6 +257,10 @@ img {
   list-style: initial;
   padding-left: 2rem;
 }
+.experience__job {
+  font-weight: var(--font-regular);
+  font-size: 0.9rem;
+}
 
 /* ========= EDUCACTION ========= */
 .education__list {
@@ -266,10 +270,14 @@ img {
 .education__item {
   display: grid;
   row-gap: 0.25rem;
+  align-items: center;
 }
 .education__item:is(p, h3) {
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
+}
+.education__career {
+  font-size: 0.8rem;
 }
 
 /* ========= PROJECTS ========= */
@@ -283,6 +291,7 @@ img {
 }
 .projects__img {
   transition: transform 0.4s;
+  border-radius: 0.5rem;
 }
 .projects__name {
   font-size: var(--normal-font-size);
@@ -337,7 +346,7 @@ img {
     grid-template-columns: 320px 530px;
   }
   .main__left {
-    border-right: 1px dashed var(--black-color);
+    border-right: 1px solid var(--black-color);
   }
   .section {
     padding-block: 2.5rem;
@@ -385,7 +394,7 @@ img {
     column-gap: 2.5rem;
   }
   .footer__container {
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-block: 3rem;
   }
 }

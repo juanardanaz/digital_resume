@@ -20,4 +20,9 @@
         list-style: initial;
         padding-left: 2rem;
     }
+
+    &__job {
+        font-weight: var(--font-regular);
+        font-size: 0.9rem;
+    }
 }

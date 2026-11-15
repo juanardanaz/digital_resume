@@ -8,10 +8,15 @@
     &__item {
         display: grid;
         row-gap: 0.25rem;
+        align-items: center;
 
         &:is(p, h3) {
             font-size: var(--normal-font-size);
             font-weight: var(--font-semi-bold);
         }
+    }
+
+    &__career {
+        font-size: 0.8rem;
     }
 }
